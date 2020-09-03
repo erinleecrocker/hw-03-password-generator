@@ -19,6 +19,10 @@ generateBtn.addEventListener("click", writePassword); {
 
 function generatePassword() {
 
+  var UppercaseChar = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
+  var LowercaseChar = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+  var NumberChar = [0,1,2,3,4,5,6,7,8,9]
+  var SpecialChar = []
   
   var passwordLength = prompt("How many characters? Choose between 8 and 128");
   console.log(passwordLength);
@@ -27,13 +31,14 @@ function generatePassword() {
     alert("You must choose between 8 and 128.")
   }else {
     confirmUppercase = confirm("Will this contain Uppercase letters?");
-    console.log(confirmUppercase);
+
+    //console.log(confirmUppercase);
     confirmLowercase = confirm("Will this contain Lowercase letters?");
-    console.log(confirmLowercase)
+    //console.log(confirmLowercase)
     confirmNumber = confirm("Will this contain numbers?");
-    console.log(confirmNumber);
+    //console.log(confirmNumber);
     confirmSpecialCharacter = confirm("Will this contain special characters?");
-    console.log(confirmSpecialCharacter);
+    //console.log(confirmSpecialCharacter);
     
     
 };
